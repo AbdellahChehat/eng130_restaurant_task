@@ -2,20 +2,20 @@
 # User Stories
 #1
 # AS a User I want to be able to see the menu in a formated way, so that I can order my meal.
-#
-# food_menu = {
-#     "Starter" : ["Salad","Soup","Lamb chops"],
-#     "main meals" : ["chicken & rice","Curry", "Chicken creamy pasta"],
-#     "Drinks" : ["fanta","coke","water"],
-#     "Dessert" : ["Chocolate cake", "Strawberry cake"]
-# }
-#
-# print(food_menu)
+
+food_menu = {
+    "Starter" : ["Salad","Soup","Lamb chops"],
+    "main meals" : ["chicken & rice","Curry", "Chicken creamy pasta"],
+    "Drinks" : ["fanta","coke","water"],
+    "Dessert" : ["Chocolate cake", "Strawberry cake"]
+}
+
+print(food_menu)
 
 #2
 # AS a User I want to be able to order 3 times, and have my responses added to a list so they aren't forgotten
 
-
+#
 new_order = []
 
 list_length = 3
@@ -31,7 +31,14 @@ print(new_order)
 #3
 # As a user, I want to have my order read back to me in formated way so I know what I ordered.
 
-print(f'Your order is {new_order} is that correct')
+print("what is your order")
+food_order = input('Enter item to order: ')
+print(f'Your order is {food_order} is that correct')
 
 user = input()
+
+if user == "yes":
+    print("Thank you your order will be with you shortly")
+else:
+    print("Could you repeat your order")
 
